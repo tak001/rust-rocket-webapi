@@ -12,6 +12,6 @@ use routes::*;
 
 fn main() {
     rocket::ignite()
-        .mount("/", routes![index, todos, new_todo, todo_by_id])
+        .mount("/", routes![index, api, todos, new_todo, todo_by_id])
         .launch();
 }

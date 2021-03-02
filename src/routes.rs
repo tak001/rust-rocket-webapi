@@ -8,6 +8,11 @@ pub fn index() -> &'static str {
     "Hello, world!"
 }
 
+#[get("/api")]
+pub fn api() -> &'static str {
+    "Hello, world!"
+}
+
 /// TODOリストを返す。
 /// Jsonの型がResponderをimplしているので、JSON文字列を返すことができる
 #[get("/todos")]
